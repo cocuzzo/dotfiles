@@ -48,8 +48,8 @@
   # Include your global excludefile
   excludefile = ~/.gitignore_global
   # Don't paginate output by default
-  # pager = cat
-  pager = delta --navigate --file-style=white --file-decoration-style='white box' --hunk-header-style=omit
+  pager = more
+  # pager = delta --navigate --file-style=white --file-decoration-style='white box' --hunk-header-style=omit
   # Speed up the status command
   untrackedCache = true
   # Don't consider trailing space change as a cause for merge conflicts

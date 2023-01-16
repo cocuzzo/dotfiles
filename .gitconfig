@@ -38,6 +38,7 @@
   # Blue on black is hard to read in git branch -vv: use cyan instead
   remote = cyan
   upstream = cyan
+  ui = always
 
 [core]
   # End of lines conversion
@@ -47,7 +48,8 @@
   # Include your global excludefile
   excludefile = ~/.gitignore_global
   # Don't paginate output by default
-  pager = cat
+  # pager = cat
+  pager = delta --navigate --file-style=white --file-decoration-style='white box' --hunk-header-style=omit
   # Speed up the status command
   untrackedCache = true
   # Don't consider trailing space change as a cause for merge conflicts
@@ -97,7 +99,8 @@
 
 [merge]
   # Display common-ancestor blocks in conflict hunks
-  # conflictStyle = diff3
+  conflictStyle = diff3
+  tool = vscode
 
 [mergetool]
   # Clean up backup files created by merge tools on tool exit

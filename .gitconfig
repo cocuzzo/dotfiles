@@ -48,7 +48,7 @@
   # Include your global excludefile
   excludefile = ~/.gitignore_global
   # Don't paginate output by default
-  pager = more
+  pager = more -R
   # pager = delta --navigate --file-style=white --file-decoration-style='white box' --hunk-header-style=omit
   # Speed up the status command
   untrackedCache = true
